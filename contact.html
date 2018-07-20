@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>My Portfolio</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="footerWrap"> <!--This is just a wrapper to help address footer behavior.-->
+            <header>
+                <div id="headTitle">
+                    <h1>Kenny Fickling</h1>
+                </div>
+                <div id="headLinks"><br>
+                    <a id ="linkAbout" href="index.html" style="text-decoration: none; color: inherit">About</a>   |   
+                    <a id ="linkPortfolio" href="portfolio.html" style="text-decoration: none; color: inherit">Portfolio</a>   | 
+                    <a id ="linkContact" href="contact.html" style="text-decoration: none; color: inherit">Contact</a>
+                </div>
+            </header>
+
+        <div class="midBG">
+            <div class ="midMain">
+                <h2>Contact</h2>
+                    <p title="Here's a bit about me.">
+                            <!-- Haven't tested form funtion, but it won't work presumably until this goes 'live', so try to test then. Whether 'text area gets included is my main concern.-->
+                        <form class="form" action="https://formspree.io/kenny.fickling@gmail.com"
+                        method="POST">
+                            <p>
+                                Name:
+                                    <input type="text"  name="Your Full Name">
+                                Email:
+                                    <input type="email" name="Email"> <!--Did I break it? -->
+                                Message:
+                                    <textarea type="textarea" name="Message Body"></textarea><br>
+                                    <input id="submitButton" type="submit" value="Send"><br><br>
+                            </p>
+                        </form>
+                    </p>
+            </div>
+        </div>
+    </div> <!-- Not hanging, it's the end of the footer-wrapper -->
+
+        <footer>
+            <br>
+            <br>
+            <br>
+            <br>
+            Copyright © 2018 Kenny Fickling
+        </footer> 
+    
+    </body>
+</html>
