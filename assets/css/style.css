@@ -1,7 +1,7 @@
 /* <!-- PLEASE NOTE:  I focused (intentionally) on the function of the site, and chose to deviate slightly from the requested design. That said, the goal of responsive-design based on device view-width should be shown clearly enough. --> */
 
 
-/* --------------------------------------Site-wide functional stuff ---------------------------------- */
+/* --------------------------------------Site-wide functionality ---------------------------------- */
 * {
     box-sizing: border-box;
 }
@@ -10,7 +10,7 @@
 }
 
 
-/* ---------------------------------------- HEADER STUFF --------------------------------------------- */
+/* ---------------------------------------- HEADER  --------------------------------------------- */
 nav {
     background-color: #ffffff;
     height: 100px;
@@ -20,7 +20,7 @@ nav {
     width: 100%;
 }
 #headTitle {
-    background-color: #4aaaa5;
+    background-color: rgb(33,45,23);
     text-align: center;
     height: 95px;
     width: 335px;
@@ -44,11 +44,11 @@ nav {
 }
 /* Leave this with the important modifier for it to function. Deals with the inline styling to remove hyperlinks. */
 #linkAbout:hover,#linkPortfolio:hover,#linkContact:hover{
-    color: #4aaaa5 !important;
+    color: rgb(33,45,23) !important;
 }
 
 
-/* ----------------------------------------- ABOUT PAGE specific ------------------------------------------- */
+/* ----------------------------------------- ABOUT PAGE  ------------------------------------------- */
 
 #bioFace{
     width: 140px; 
@@ -60,7 +60,7 @@ nav {
 }
 
 
-/* -----------------------------------MAIN BODY styles and placement-------------------------------------- */
+/* -------------------------------------------  MAIN BODY   ----------------------------------------- */
 body{
     background-image: url("../images/backgrounds/what-the-hex.png");
     background-repeat: repeat;
@@ -83,7 +83,7 @@ body{
 }
 
 
-/* -------------------------------------- FOOTER STUFF ------------------------------------------------- */
+/* -----------------------------------------      FOOTER STUFF    ------------------------------------------------- */
 footer {
     height: 75px;
     background-color: #666666;
@@ -92,7 +92,7 @@ footer {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     border-top-style: solid;
-    border-top-color: #4aaaa5;
+    border-top-color: rgb(33,45,23);
     border-top-width: 10px;
     padding-bottom: 10px;
     float: center;
@@ -103,7 +103,7 @@ footer {
 }
 
 
-/* -------------------------- Element Styling...maybe eventually move this to its own css file? ------------ */
+/* ------------------------------------------------- Element Styling  ----------------------------------------------- */
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
@@ -112,7 +112,7 @@ h1 {
 }
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
+    color: rgb(33,45,23);
     font-size: 28px;
     font-weight: bold;
     padding-bottom: 20px;
@@ -132,18 +132,20 @@ p {
 }
 
 
-/* ---------------------------------------- PORTFOLIO page specific stuff --------------------------------- */
+/* -------------------------------------------- PORTFOLIO PAGE ----------------------------------------------- */
 .imgMyWork{
+    width: 180px;
+    height: auto;
     float:left;
     margin: 10px;
     position: relative;
 }
 .imgLabel{
     position: absolute;
-    bottom: 15%;
+    top: 25%;
     width: 180px;
-    height: 50px;
-    background-color:#4aaaa5; 
+    height: 40px;
+    background-color:rgb(33,45,23); 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
@@ -162,7 +164,7 @@ p {
 }
 
 
-/* ---------------------------------------- CONTACT page specific stuff ----------------------------------- */
+/* -------------------------------------------------- CONTACT PAGE --------------------------------------------------------- */
 input{
     width: 100%;
 }
@@ -174,7 +176,7 @@ textarea{
     height: 50px;
     width: 250px;
     color: white;
-    background-color: #4aaaa5;
+    background-color: rgb(33,45,23);
     font-style:bold;
     font-size: 24px;
 }
@@ -185,7 +187,7 @@ textarea{
 
 
 /* ------------------ BEGIN RESPONSIVE STYLING ---------------------------- */
-/* NOTE THAT FOR NOW I"M KEEPING THE LONG MESSY CODE IN CASE WE MODIFY DETAILS. Clean up before submitting. */
+/* NOTE THAT FOR FUTURE REFERENCE IN NEEDED CHANGES I'M LEAVING MUCH COPY-PASTED REDUNANT CODE */
 /* 960 */
 @media screen and (max-width: 980px){
     nav {
@@ -198,7 +200,7 @@ textarea{
         position: relative;
     }
     #headTitle {
-        background-color: #4aaaa5;
+        background-color: rgb(33,45,23);
         text-align: center;
         height: 95px;
         width: 335px;
@@ -272,7 +274,7 @@ textarea{
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
         border-top-style: solid;
-        border-top-color: #4aaaa5;
+        border-top-color: rgb(33,45,23);
         border-top-width: 10px;
         padding-bottom: 10px;
         float: center;
@@ -292,7 +294,7 @@ textarea{
     }
     h2 {
         font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #4aaaa5;
+        color: rgb(33,45,23);
         font-size: 28px;
         font-weight: bold;
         padding-bottom: 20px;
@@ -314,16 +316,18 @@ textarea{
     
     /* ---------------------------------------- PORTFOLIO page specific stuff --------------------------------- */
     .imgMyWork{
+        width: 180px;
+        height: auto;
         float:left;
         margin: 10px;
         position: relative;
     }
     .imgLabel{
         position: absolute;
-        bottom: 15%;
+        top: 25%;
         width: 180px;
-        height: 50px;
-        background-color:#4aaaa5; 
+        height: 40px;
+        background-color:rgb(33,45,23); 
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color: #ffffff;
@@ -335,7 +339,6 @@ textarea{
         border: solid;
         border-color: #cccccc;
         border-width: 3px;
-        
     }
     #portFix{
         margin: 20px;
@@ -344,33 +347,26 @@ textarea{
     input{
         width: 100%;
     }
-    
     textarea{
         width: 100%;
         height: 140px;
     }
-    
     #submitButton {
         height: 50px;
         width: 250px;
         color: white;
-        background-color: #4aaaa5;
+        background-color: rgb(33,45,23);
         font-style:bold;
         font-size: 24px;
     }
-    
     .form{
         height: 300%;
         line-height: 100%;
     }
-    
-
-
-
 }
 
 
-                                                            /* 768 */
+        /* 768 */
 
 @media screen and (max-width: 768px){
     nav {
@@ -383,7 +379,7 @@ textarea{
         position: relative;
     }
     #headTitle {
-        background-color: #4aaaa5;
+        background-color: rgb(33,45,23);
         text-align: center;
         height: 95px;
         width: 335px;
@@ -457,7 +453,7 @@ textarea{
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
         border-top-style: solid;
-        border-top-color: #4aaaa5;
+        border-top-color: rgb(33,45,23);
         border-top-width: 10px;
         padding-bottom: 10px;
         float: center;
@@ -477,7 +473,7 @@ textarea{
     }
     h2 {
         font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #4aaaa5;
+        color: rgb(33,45,23);
         font-size: 28px;
         font-weight: bold;
         padding-bottom: 20px;
@@ -499,16 +495,18 @@ textarea{
     
     /* ---------------------------------------- PORTFOLIO page specific stuff --------------------------------- */
     .imgMyWork{
+        width: 180px;
+        height: auto;
         float:left;
         margin: 10px;
         position: relative;
     }
     .imgLabel{
         position: absolute;
-        bottom: 15%;
+        top: 25%;
         width: 180px;
-        height: 50px;
-        background-color:#4aaaa5; 
+        height: 40px;
+        background-color:rgb(33,45,23); 
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color: #ffffff;
@@ -520,7 +518,6 @@ textarea{
         border: solid;
         border-color: #cccccc;
         border-width: 3px;
-        
     }
     #portFix{
         margin: 20px;
@@ -534,36 +531,29 @@ textarea{
         width: 100%;
         height: 140px;
     }
-    
     #submitButton {
         height: 50px;
         width: 250px;
         color: white;
-        background-color: #4aaaa5;
+        background-color: rgb(33,45,23);
         font-style:bold;
         font-size: 24px;
     }
-    
     .form{
         height: 300%;
         line-height: 100%;
     }
-    
-
-
-
 }
 
 
 
-
-                                                                        /* 640 */
+/* 640 */
 
 
 
 @media screen and (max-width: 640px){
     nav {
-        background-color: #4aaaa5;  /*  Used marker */
+        background-color: rgb(33,45,23);  /*  Used marker */
         height: 100px;
         border-bottom-style: solid;
         border-bottom-color: #cccccc;
@@ -572,7 +562,7 @@ textarea{
         position: relative;
     }
     #headTitle {
-        background-color: #4aaaa5;
+        background-color: rgb(33,45,23);
         text-align: center;
         height: 95px;
         width: 100%; /*  Used marker */
@@ -647,7 +637,7 @@ textarea{
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
         border-top-style: solid;
-        border-top-color: #4aaaa5;
+        border-top-color: rgb(33,45,23);
         border-top-width: 10px;
         padding-bottom: 10px;
         float: center;
@@ -667,7 +657,7 @@ textarea{
     }
     h2 {
         font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #4aaaa5;
+        color: rgb(33,45,23);
         font-size: 28px;
         font-weight: bold;
         padding-bottom: 20px;
@@ -689,16 +679,18 @@ textarea{
     
     /* ---------------------------------------- PORTFOLIO page specific stuff --------------------------------- */
     .imgMyWork{
+        width: 180px;
+        height: auto;
         float:left;
         margin: 10px;
         position: relative;
     }
     .imgLabel{
         position: absolute;
-        bottom: 15%;
+        top: 25%;
         width: 180px;
-        height: 50px;
-        background-color:#4aaaa5; 
+        height: 40px;
+        background-color:rgb(33,45,23); 
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color: #ffffff;
@@ -719,29 +711,22 @@ textarea{
     input{
         width: 100%;
     }
-    
     textarea{
         width: 100%;
         height: 140px;
     }
-    
     #submitButton {
         height: 50px;
         width: 250px;
         color: white;
-        background-color: #4aaaa5;
+        background-color: rgb(33,45,23);
         font-style:bold;
         font-size: 24px;
     }
-    
     .form{
         height: 300%;
         line-height: 100%;
     }
-    
-
-
-
 }
 
 
