@@ -4,7 +4,7 @@ A simple portfolio designed to be accessible across platforms!
 ## Take a Look: 
 
 This project is live (deployed on github), so take a look:
-  (link here)
+  (https://must-git-good.github.io/Responsive-Portfolio/)
 
 ### Purpose
 
